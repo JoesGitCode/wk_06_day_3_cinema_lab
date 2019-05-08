@@ -39,8 +39,7 @@ Cinema.prototype.totalLengthOfAllFilms = function(){
 }
 
 Cinema.prototype.filmsByProperty = function(property, value){
-  const allFilmsByProperty = this.films.map(film => film[property])
-  return allFilmsByProperty.filter(film => film === value)
+  return this.films.filter(film => film[property] === value)
 }
 
 
